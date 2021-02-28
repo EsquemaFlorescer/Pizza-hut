@@ -1,6 +1,10 @@
 header {
   width: 100%;
+  background: #ffffff;
   display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
   padding: 1rem;
 
   align-items: center;
@@ -11,6 +15,11 @@ header {
 
     align-items: center;
     justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
 
     small {
       color: rgba(0, 0, 0, 0.671);
@@ -43,13 +52,6 @@ header {
       }
     }
   }
-
-  input {
-    padding: 0.6rem 3.5rem;
-    border-radius: .45rem;
-    font-size: 1rem;
-    background: rgba($color: #000000, $alpha: 0.1);
-  }
 }
 
 @media (max-width: 1024px) {
@@ -59,14 +61,11 @@ header {
     section {
       margin: 1rem 0;
     }
-
-    input {
-      display: none;
-    }
   }
 }
 
 main {
+  margin-top: 7rem;
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -75,10 +74,11 @@ main {
   align-items: center;
   justify-content: flex-start;
 
-  section#pizzas {
+  section#pizzas, #sobremesas {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 6rem;
 
     align-items: center;
     justify-content: space-between; 
@@ -92,7 +92,7 @@ main {
 
       span {
         height: 1rem;
-        width: 40%;
+        width: 35%;
         background: #e93926d2;
         border-radius: 0.3rem;
       }
@@ -105,11 +105,12 @@ main {
 
     .items {
       width: 100%;
-      display: flex;
-      margin-top: 1rem;
-      gap: 3.125rem;
-      justify-content: start;
-      flex-wrap: wrap;
+      margin-top: 2rem;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      row-gap: 3rem;
+      justify-items: center;
 
       .card {
         display: flex;
@@ -142,7 +143,15 @@ main {
           font-size: 1.8rem;
           color: #e93926;
         }
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
+  }
+
+  #sobremesas {
+    margin: 0;
   }
 }
