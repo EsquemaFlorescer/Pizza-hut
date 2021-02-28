@@ -1,0 +1,91 @@
+@import "header";
+
+main {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: flex-start;
+  
+  .modal {
+    width: 60%;
+    max-width: 500px;
+
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 1.2rem;
+    border: 3px solid #e93926;
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    form {
+      width: 80%;
+      
+      .input-wrapper {
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        
+        margin: 1rem 0;
+        align-items: start;
+
+        label {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 0.6rem;
+        }
+
+        input {
+          width: 100%;
+
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 0.6rem 0.8rem;
+
+          background: #D7D7D7;
+          border-radius: 0.45rem;
+
+          &::placeholder {
+            font-weight: 600;
+
+            color: rgba($color: #000000, $alpha: 0.5);
+          }
+        }
+      }
+      
+      button {
+        width: 100%;
+
+        margin-top: 1.2rem;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+
+        font-weight: bold;
+        font-size: 1.2rem;
+        
+        color: #fafafa;
+        background: #e93926;
+
+
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+          color: #cccccc;
+          background: #cb3927;
+        }
+      }
+    }
+  }
+}

@@ -1,73 +1,10 @@
-header {
-  width: 100%;
-  background: #ffffff;
-  display: flex;
-  top: 0;
-  left: 0;
-  position: fixed;
-  padding: 1rem;
-
-  align-items: center;
-  justify-content: space-between;
-
-  section {
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    div {
-      display: flex;
-      align-items: center;
-    }
-
-    small {
-      color: rgba(0, 0, 0, 0.671);
-      font-size: 0.8rem;
-    }
-
-    img#map {
-      margin-left: 1.6rem;
-    }
-
-    a {
-      padding: 0.8rem 1rem;
-      border-radius: 0.8rem;
-      font-size: 1.1rem;
-      transition: .3s;
-
-      &#checkout {
-        background: #E93B26;
-      }
-
-      &#login {
-        color: #000;
-        margin: 0 1.2rem;
-        border: 2px solid #E93B26;
-      }
-
-      &#register {
-        color: #000;
-        border: 2px solid #000;
-      }
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  header {
-    flex-direction: column;
-
-    section {
-      margin: 1rem 0;
-    }
-  }
-}
+@import "header";
 
 main {
-  margin-top: 7rem;
   width: 100%;
+  
   padding: 1rem;
+
   display: flex;
   flex-direction: column;
 

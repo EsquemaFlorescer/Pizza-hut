@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./static/styles/global.css">
   <link rel="stylesheet" href="./static/styles/index.css">
-
+  
   <title>Pizza Hut</title>
   <link rel="icon" href="./static/assets/full.svg">
-
+  
   <script defer src="./static/js/index.js"></script>
 </head>
 <body>
   <header>
     <section id="left">
-      <img width="200" height="80" src="./static/assets/full.svg" alt="Logo do pizza hut">
+      <a href="/index.html"><img width="200" height="80" src="./static/assets/full.svg" alt="Logo do pizza hut"></a>
       <div>
         <img id="map" width="35" height="35" src="./static/assets/map-pin.svg" alt="Ícone de localização do restaurante">
         <small>São Paulo, Morumbi</small>
       </div>
     </section>
     <section id="right">
-      <a id="checkout" href="#">Faça seu pedido</a>
-      <a id="login" href="#">Login</a>
-      <a id="register" href="#">Cadastre-se</a>
+      <a id="checkout" href="./pages/checkout.html">Faça seu pedido</a>
+      <a id="login" href="./pages/login.html">Login</a>
+      <a id="register" href="./pages/register.html">Cadastre-se</a>
+      <a id="logout" href="./pages/register.html">Cadastre-se</a>
+      <div class="user-pic"></div>
+      <p>User Name</p>
     </section>
   </header>
-
+  
   <main>
     <section id="pizzas">
       <div id="title">
@@ -36,7 +39,7 @@
         <h1>PIZZAS</h1>
         <span></span>
       </div>
-
+      
       <section class="items">
         <div class="card">
           <div class="background"></div>
@@ -100,15 +103,15 @@
         </div>
       </section>
     </section>
-
-
+    
+    
     <section id="sobremesas">
       <div id="title">
         <span></span>
         <h1>SOBREMESAS</h1>
         <span></span>
       </div>
-
+      
       <section class="items">
         <div class="card">
           <div class="background"></div>

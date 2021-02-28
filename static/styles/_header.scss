@@ -1,0 +1,115 @@
+main  {
+  margin-top: 10rem;
+}
+
+header {
+  width: 100%;
+  background: #ffffff;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  padding: 1rem;
+  
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  
+  section {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    div {
+      display: flex;
+      align-items: center;
+    }
+    
+    small {
+      color: rgba(0, 0, 0, 0.671);
+      font-size: 0.8rem;
+    }
+    
+    img#map {
+      margin-left: 1.6rem;
+    }
+    
+    a {
+      padding: 0.8rem 1rem;
+      border-radius: 0.8rem;
+      font-size: 1.1rem;
+      transition: .3s;
+      
+      &#checkout {
+        margin-right: .5rem;
+
+        background: #E93B26;
+
+        &:hover {
+          background: #cb3927;
+        }
+      }
+      
+      &#login {
+        color: #000;
+        margin: 0 1.2rem;
+        border: 2px solid #E93B26;
+
+        &:hover {
+          color: rgba($color: #000000, $alpha: 0.5);
+        }
+      }
+      
+      &#register {
+        margin-left: .5rem;
+
+        color: #000;
+        border: 2px solid #000;
+
+        &:hover {
+          color: rgba($color: #000000, $alpha: 0.6);
+        }
+      }
+
+      &#logout {
+        display: none;
+        background: rgb(117, 117, 117);
+
+        &:hover {
+          background: rgb(187, 117, 117);
+        }
+      }
+    }
+
+    .user-pic {
+      width: 50px;
+      height: 50px;
+      background: red;
+
+      border-radius: 50px;
+
+      margin-right: 1rem;
+    }
+
+    .user-pic, p {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 18rem;
+  }
+  
+  header {
+    flex-direction: column;
+    
+    section {
+      margin: 1rem 0;
+    }
+  }
+}

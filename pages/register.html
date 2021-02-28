@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="stylesheet" href="../static/styles/global.css">
+  <link rel="stylesheet" href="../static/styles/login.css">
+  
+  <title>Pizza Hut</title>
+  <link rel="icon" href="../static/assets/full.svg">
+  
+  <script defer src="../static/js/index.js"></script>
+</head>
+<body>
+  <header>
+    <section id="left">
+      <a href="/index.html"><img width="200" height="80" src="../static/assets/full.svg" alt="Logo do pizza hut"></a>
+      <div>
+        <img id="map" width="35" height="35" src="../static/assets/map-pin.svg" alt="Ícone de localização do restaurante">
+        <small>São Paulo, Morumbi</small>
+      </div>
+    </section>
+    <section id="right">
+      <a id="checkout" href="./checkout.html">Faça seu pedido</a>
+      <a id="login" href="./login.html">Login</a>
+      <a id="logout" href="./pages/register.html">Logout</a>
+      <div class="user-pic"></div>
+      <p>User Name</p>
+    </section>
+  </header>
+  
+  <main>
+    <div class="modal">
+      <h1>Registre-se</h1>
+      <form action="/index.html">
+        <div class="input-wrapper">
+          <label for="name">Nome:</label>
+          <input required type="text" name="name" placeholder="Seu nome">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="lastname">Sobrenome:</label>
+          <input required type="text" name="lastname" placeholder="Seu sobrenome">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email">Insira seu e-mail:</label>
+          <input required type="email" name="email" placeholder="Seu email">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="password">Insira sua senha:</label>
+          <input required type="password" name="password" placeholder="Sua senha">
+        </div>
+        
+        <button type="submit">Se registrar</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
