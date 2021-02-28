@@ -1,0 +1,148 @@
+header {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  section {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    small {
+      color: rgba(0, 0, 0, 0.671);
+      font-size: 0.8rem;
+    }
+
+    img#map {
+      margin-left: 1.6rem;
+    }
+
+    a {
+      padding: 0.8rem 1rem;
+      border-radius: 0.8rem;
+      font-size: 1.1rem;
+      transition: .3s;
+
+      &#checkout {
+        background: #E93B26;
+      }
+
+      &#login {
+        color: #000;
+        margin: 0 1.2rem;
+        border: 2px solid #E93B26;
+      }
+
+      &#register {
+        color: #000;
+        border: 2px solid #000;
+      }
+    }
+  }
+
+  input {
+    padding: 0.6rem 3.5rem;
+    border-radius: .45rem;
+    font-size: 1rem;
+    background: rgba($color: #000000, $alpha: 0.1);
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+
+    section {
+      margin: 1rem 0;
+    }
+
+    input {
+      display: none;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  section#pizzas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between; 
+
+    #title {
+      width: 100%;
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        height: 1rem;
+        width: 40%;
+        background: #e93926d2;
+        border-radius: 0.3rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: #000000c9;
+      }
+    }
+
+    .items {
+      width: 100%;
+      display: flex;
+      margin-top: 1rem;
+      gap: 3.125rem;
+      justify-content: start;
+      flex-wrap: wrap;
+
+      .card {
+        display: flex;
+        width: 232px;
+        padding: 1rem;
+        flex-direction: column;
+        border-radius: .35rem;
+        background: #C4C4C4;
+
+        .background {
+          width: 100%;
+          height: 100px;
+          align-self: center;
+          border-radius: .35rem;
+          background: gray;
+          margin-bottom: 1rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          color: rgba(0, 0, 0, 0.575);
+        }
+
+        small {
+          margin-top: 0.5rem;
+          text-align: end;
+          font-size: 1.8rem;
+          color: #e93926;
+        }
+      }
+    }
+  }
+}

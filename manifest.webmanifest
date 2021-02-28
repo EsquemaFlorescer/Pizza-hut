@@ -1,0 +1,8 @@
+{
+  "name": "pizza hut web app",
+  "short_name": "pizzahut",
+  "theme_color": "#ececec",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "./index.html"
+}

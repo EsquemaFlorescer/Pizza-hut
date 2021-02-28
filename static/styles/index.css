@@ -1,0 +1,194 @@
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header section small {
+  color: rgba(0, 0, 0, 0.671);
+  font-size: 0.8rem;
+}
+
+header section img#map {
+  margin-left: 1.6rem;
+}
+
+header section a {
+  padding: 0.8rem 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header section a#checkout {
+  background: #E93B26;
+}
+
+header section a#login {
+  color: #000;
+  margin: 0 1.2rem;
+  border: 2px solid #E93B26;
+}
+
+header section a#register {
+  color: #000;
+  border: 2px solid #000;
+}
+
+header input {
+  padding: 0.6rem 3.5rem;
+  border-radius: .45rem;
+  font-size: 1rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header section {
+    margin: 1rem 0;
+  }
+  header input {
+    display: none;
+  }
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main section#pizzas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section#pizzas #title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section#pizzas #title span {
+  height: 1rem;
+  width: 40%;
+  background: #e93926d2;
+  border-radius: 0.3rem;
+}
+
+main section#pizzas #title h1 {
+  font-size: 1.8rem;
+  color: #000000c9;
+}
+
+main section#pizzas .items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  gap: 3.125rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section#pizzas .items .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 232px;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .35rem;
+  background: #C4C4C4;
+}
+
+main section#pizzas .items .card .background {
+  width: 100%;
+  height: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: .35rem;
+  background: gray;
+  margin-bottom: 1rem;
+}
+
+main section#pizzas .items .card h2 {
+  font-size: 1.2rem;
+}
+
+main section#pizzas .items .card p {
+  color: rgba(0, 0, 0, 0.575);
+}
+
+main section#pizzas .items .card small {
+  margin-top: 0.5rem;
+  text-align: end;
+  font-size: 1.8rem;
+  color: #e93926;
+}
+/*# sourceMappingURL=index.css.map */
