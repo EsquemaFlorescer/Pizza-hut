@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="manifest" href="../manifest.webmanifest">
   <link rel="stylesheet" href="../static/styles/global.css">
   <link rel="stylesheet" href="../static/styles/login.css">
   
   <title>Pizza Hut</title>
   <link rel="icon" href="../static/assets/full.svg">
   
-  <script defer src="../static/js/index.js"></script>
+  <script defer type="module" src="../static/js/login.js"></script>
 </head>
 <body>
   <header>
@@ -23,26 +22,26 @@
       </div>
     </section>
     <section id="right">
-      <a id="checkout" href="./checkout.html">Faça seu pedido</a>
-      <a id="register" href="./register.html">Cadastre-se</a>
-      <a id="logout" href="./pages/register.html">logout</a>
+      <a id="login" href="./pages/login.html">Faça seu pedido</a>
+      <a id="register" href="./pages/register.html">Cadastre-se</a>
       <div class="user-pic"></div>
-      <p>User Name</p>
+      <p><strong></strong></p>
+      <a id="logout" href="./pages/register.html">logout</a>
     </section>
   </header>
   
   <main>
     <div class="modal">
       <h1>Faça seu login</h1>
-      <form action="/index.html">
+      <form>
         <div class="input-wrapper">
           <label for="email">Insira seu e-mail:</label>
-          <input required type="email" name="email" placeholder="Seu E-mail">
+          <input required  id="email" type="email" name="email" placeholder="Seu E-mail">
         </div>
 
         <div class="input-wrapper">
-          <label for="password">Insira sua e-mail:</label>
-          <input required type="password" name="password" placeholder="Sua senha">
+          <label for="password">Insira sua senha:</label>
+          <input required id="password" type="password" name="password" placeholder="Sua senha">
         </div>
         
         <button type="submit">Fazer login</button>

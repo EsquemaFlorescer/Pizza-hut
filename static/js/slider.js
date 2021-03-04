@@ -25,8 +25,6 @@ $("#front").addEventListener("click", () => {
     $("#front").innerHTML = "Finalizar a compra"
   } else if(Counter = 2) {
     $("#cardInfo form").submit()
-    // alert("Compra finalizada")
-    // window.location.href = "http://localhost:5500/index.html"
   }
 })
 
@@ -42,7 +40,6 @@ $("#back").addEventListener("click", () => {
   }
 })
 
-console.log($("#cardInfo select").value)
 $("select").addEventListener("change", () => {
   if($("select").value == 1) {
     $("#cardInfo form").style.display = "none"
@@ -61,3 +58,5 @@ if(Counter == 0) {
   Display($("#back"), "show", "flex")
   $("#front").innerHTML = "Finalizar a compra"
 }
+
+export { Counter }

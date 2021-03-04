@@ -4,31 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./static/styles/global.css">
   <link rel="stylesheet" href="./static/styles/index.css">
   
   <title>Pizza Hut</title>
   <link rel="icon" href="./static/assets/full.svg">
   
-  <script defer src="./static/js/index.js"></script>
+  <script defer type="module" src="./static/js/items.js"></script>
 </head>
 <body>
   <header>
     <section id="left">
-      <a href="/index.html"><img width="200" height="80" src="./static/assets/full.svg" alt="Logo do pizza hut"></a>
+      <a href="/index.html"><img width="200" height="80" src="../static/assets/full.svg" alt="Logo do pizza hut"></a>
       <div>
-        <img id="map" width="35" height="35" src="./static/assets/map-pin.svg" alt="Ícone de localização do restaurante">
-        <small>São Paulo, Morumbi</small>
+        <img id="map" width="35" height="35" src="../static/assets/map-pin.svg" alt="Ícone de localização do restaurante">
+        <small><span id="city">São Paulo</span>, <span id="restaurant">Morumbi</span></small>
       </div>
     </section>
     <section id="right">
       <a id="checkout" href="./pages/checkout.html">Faça seu pedido</a>
       <a id="login" href="./pages/login.html">Login</a>
       <a id="register" href="./pages/register.html">Cadastre-se</a>
-      <a id="logout" href="./pages/register.html">Cadastre-se</a>
       <div class="user-pic"></div>
-      <p>User Name</p>
+      <p><strong></strong></p>
+      <a id="logout" href="#">logout</a>
     </section>
   </header>
   
@@ -41,66 +40,6 @@
       </div>
       
       <section class="items">
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
       </section>
     </section>
     
@@ -113,66 +52,6 @@
       </div>
       
       <section class="items">
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
-        <div class="card">
-          <div class="background"></div>
-          <h2>Pizza Name</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, veritatis.</p>
-          <small><strong>R$ 25</strong></small>
-        </div>
       </section>
     </section>
   </main>

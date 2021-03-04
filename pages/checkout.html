@@ -10,7 +10,8 @@
   <title>Pizza Hut</title>
   <link rel="icon" href="../static/assets/full.svg">
   
-  <script defer src="/static/js/index.js"></script>
+  <script defer type="module" src="/static/js/checkout.js"></script>
+  <script defer type="module" src="/static/js/slider.js"></script>
 </head>
 <body>
   <header>
@@ -24,9 +25,9 @@
     <section id="right">
       <a id="login" href="./login.html">Login</a>
       <a id="register" href="./register.html">Cadastre-se</a>
-      <a id="logout" href="./register.html">Cadastre-se</a>
       <div class="user-pic"></div>
-      <p>User Name</p>
+      <p><strong></strong></p>
+      <a id="logout" href="./register.html">logout</a>
     </section>
   </header>
   
@@ -46,30 +47,6 @@
           </thead>
           
           <tbody>
-            <tr>
-              <th>1</th>
-              <th>Pizza Pepperoni</th>
-              <th>R$ 26,50</th>
-              <th><img src="/static/assets/minus.svg" alt="remover item"></th>
-            </tr>
-            <tr>
-              <th>1</th>
-              <th>Pizza Pepperoni</th>
-              <th>R$ 26,50</th>
-              <th><img src="/static/assets/minus.svg" alt="remover item"></th>
-            </tr>
-            <tr>
-              <th>1</th>
-              <th>Pizza Pepperoni</th>
-              <th>R$ 26,50</th>
-              <th><img src="/static/assets/minus.svg" alt="remover item"></th>
-            </tr>
-            <tr id="total">
-              <th></th>
-              <th><strong>Total</strong></th>
-              <th>R$ 430,00</th>
-              <th></th>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -81,7 +58,7 @@
           <option value="1">Dinheiro</option>
         </select>
         <form id="cardForm">
-          <input required type="number" placeholder="número do cartão">
+          <input required type="number" placeholder="número do cartão sem hípens ou espaços">
           <div class="input-wrapper">
             <input required placeholder="Data de vencimento" type="text">
             <input required placeholder="Código de segurança" type="text">
@@ -92,7 +69,7 @@
       
       <footer>
         <button id="back"><span>&larr;</span> Voltar</button>
-        <button id="front">Próximo <span>&rarr;</span></button>
+        <button type="submit" form="cardForm" id="front">Próximo <span>&rarr;</span></button>
       </footer>
     </section>
   </main>
